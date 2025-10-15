@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Assignment1</string>
+    <string name="score_text">Score: 0</string>
+    <string name="currenthold">You are currently at hold: 0</string>
+    <string name="climb">Climb</string>
+    <string name="fall">Fall</string>
+    <string name="reset">Reset</string>
+</resources>

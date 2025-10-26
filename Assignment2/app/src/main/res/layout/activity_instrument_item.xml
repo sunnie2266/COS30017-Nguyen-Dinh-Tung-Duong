@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            style="@style/BodyText" />
+
+        <Button
+            android:id="@+id/btnProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile"
+            style="@style/SecondaryButton"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnChangeUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/log_out"
+            style="@style/SecondaryButton" />
+
+    </LinearLayout>
+
+    <!-- Instrument Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/Card"
+        android:padding="24dp">
+
+        <!-- Instrument Image -->
+        <ImageView
+            android:id="@+id/ivInstrument"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/card_background"
+            android:contentDescription="@string/instrument_image" />
+
+        <!-- Instrument Details -->
+        <TextView
+            android:id="@+id/tvInstrumentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            style="@style/HeadingText" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="12dp"
+            style="@style/BodyText" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:rating="0"
+            android:isIndicator="true" />
+
+        <!-- Categories -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/category"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            style="@style/BodyText" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipAcoustic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Acoustic"
+                style="@style/Chip" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipElectric"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Electric"
+                style="@style/Chip" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipKeyboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keyboard"
+                style="@style/Chip" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <!-- Navigation Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPrevious"
+                style="@style/SecondaryButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/previous" />
+
+            <Button
+                android:id="@+id/btnViewDetails"
+                style="@style/PrimaryButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="@string/view_details" />
+
+            <Button
+                android:id="@+id/btnNext"
+                style="@style/SecondaryButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:text="@string/next" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnBorrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/borrow_now"
+            style="@style/PrimaryButton" />
+
+    </LinearLayout>
+
+</LinearLayout>

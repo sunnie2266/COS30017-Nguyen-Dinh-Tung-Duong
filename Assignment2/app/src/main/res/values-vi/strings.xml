@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ứng Dụng Thuê Nhạc Cụ</string>
+    <string name="get_started">Bắt Đầu Ngay!</string>
+    <string name="shop_now">Mua Sắm Ngay!</string>
+    <string name="name">Tên</string>
+    <string name="phone">Điện Thoại</string>
+    <string name="email">Email</string>
+    <string name="language">Ngôn Ngữ</string>
+    <string name="english">Tiếng Anh</string>
+    <string name="vietnamese">Tiếng Việt</string>
+    <string name="profile">Hồ Sơ</string>
+    <string name="log_out">Đăng Xuất</string>
+    <string name="category">Danh Mục</string>
+    <string name="previous">Trước</string>
+    <string name="next">Tiếp</string>
+    <string name="view_details">Xem Chi Tiết</string>
+    <string name="borrow_now">Thuê Ngay</string>
+    <string name="rental_duration">Thời Gian Thuê</string>
+    <string name="one_month">1 Tháng</string>
+    <string name="three_months">3 Tháng</string>
+    <string name="six_months">6 Tháng</string>
+    <string name="include_insurance">Bao gồm Bảo hiểm (+50 tín dụng/tháng)</string>
+    <string name="cancel">Hủy</string>
+    <string name="save">Lưu</string>
+    <string name="rental_history">Lịch Sử Thuê</string>
+    <string name="description">Mô Tả</string>
+    <string name="specifications">Thông Số Kỹ Thuật</string>
+    <string name="instrument_image">Hình Ảnh Nhạc Cụ</string>
+</resources>

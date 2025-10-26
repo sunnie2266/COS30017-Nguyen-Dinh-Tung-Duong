@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Musical Instrument Rental App</string>
+    <string name="get_started">Get Started</string>
+    <string name="shop_now">Shop Now!</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="language">Language</string>
+    <string name="english">English</string>
+    <string name="vietnamese">Vietnamese</string>
+    <string name="profile">Profile</string>
+    <string name="log_out">Log Out</string>
+    <string name="category">Category</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="view_details">View Details</string>
+    <string name="borrow_now">Borrow Now</string>
+    <string name="rental_duration">Rental Duration</string>
+    <string name="one_month">1 Month</string>
+    <string name="three_months">3 Months</string>
+    <string name="six_months">6 Months</string>
+    <string name="include_insurance">Include Insurance (+50 credits/month)</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="rental_history">Rental History</string>
+    <string name="description">Description</string>
+    <string name="specifications">Specifications</string>
+    <string name="instrument_image">Instrument Image</string>
+</resources>

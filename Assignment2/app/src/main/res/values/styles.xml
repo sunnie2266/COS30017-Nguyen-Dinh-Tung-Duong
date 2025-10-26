@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Modern Text Styles -->
+    <style name="HeadingText">
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <style name="BodyText">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <style name="CaptionText">
+        <item name="android:textColor">@color/outline</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <style name="EditText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <!-- Modern Buttons - Use shape appearance instead of cornerRadius -->
+    <style name="PrimaryButton" parent="Widget.Material3.Button">
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textColor">@color/on_primary</item>
+        <item name="android:backgroundTint">@color/primary</item>
+        <item name="shapeAppearance">@style/ShapeAppearanceMedium</item>
+        <item name="android:elevation">2dp</item>
+    </style>
+
+    <style name="SecondaryButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="strokeColor">@color/primary</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="shapeAppearance">@style/ShapeAppearanceMedium</item>
+    </style>
+
+    <!-- Enhanced Chip Style - Use chipCornerRadius -->
+    <style name="Chip" parent="Widget.Material3.Chip.Assist.Elevated">
+        <item name="chipBackgroundColor">@color/primary_light</item>
+        <item name="chipStrokeColor">@color/primary</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipCornerRadius">12dp</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <style name="TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/surface</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxStrokeColor">@color/outline</item>
+        <item name="shapeAppearance">@style/ShapeAppearanceSmall</item>
+        <item name="hintTextColor">@color/outline</item>
+    </style>
+
+    <style name="ShapeAppearanceSmall" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <!-- Card Style -->
+    <style name="Card">
+        <item name="android:background">@drawable/card_background</item>
+        <item name="android:elevation">2dp</item>
+    </style>
+
+    <!-- Shape Appearances -->
+    <style name="ShapeAppearanceMedium" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+</resources>

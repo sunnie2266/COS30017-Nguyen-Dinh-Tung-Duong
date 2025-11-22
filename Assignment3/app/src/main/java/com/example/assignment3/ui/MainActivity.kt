@@ -1,4 +1,4 @@
-package com.example.assignment3
+package com.example.assignment3.ui
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -7,14 +7,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
+import com.example.assignment3.R
 import com.example.assignment3.data.TaskRepository
 import com.example.assignment3.data.TaskDatabase
-import com.example.assignment3.ui.ActiveTasksFragment
-import com.example.assignment3.ui.AddTaskDialogFragment
-import com.example.assignment3.ui.CompletedTasksFragment
-import com.example.assignment3.ui.TaskListFragment
-import com.example.assignment3.ui.TaskViewModel
-import com.example.assignment3.ui.TaskViewModelFactory
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
@@ -90,5 +85,5 @@ class MainActivity : AppCompatActivity() {
         dialog.show(supportFragmentManager, "AddTaskDialog")
     }
 
-    fun getViewModel(): TaskViewModel = viewModel
+    fun getTaskViewModel(): TaskViewModel = viewModel
 }

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <RadioGroup
+            android:id="@+id/radioGroupViewType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="List"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioGrid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grid"
+                android:layout_marginStart="16dp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnAddTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Task"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTasks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
